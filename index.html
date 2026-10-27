@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="King Burger — sabor de verdade em cada mordida.">
+    <meta name="theme-color" content="#17130f">
+    <title>King Burger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titan+One&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/header.css">
+    
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="site-header__announcement">
+        <span class="site-header__announcement-label">Atenção!</span>
+        Descontos e cupons promocionais só podem ser obtidos em nossos canais oficiais.
+      </p>
+
+      <div class="site-header__navigation">
+        <div class="site-header__container">
+          <a class="site-header__brand" href="#hero-section" aria-label="King Burger — início">
+            <img
+              class="site-header__brand-icon"
+              src="public/images/king-burger-mark.svg"
+              alt=""
+              width="24"
+              height="29"
+            >
+            <span class="site-header__brand-name">
+              <span>KING</span>
+              <span>BURGER</span>
+            </span>
+          </a>
+
+          <button
+            class="site-header__menu-toggle"
+            type="button"
+            aria-label="Abrir menu de navegação"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            data-menu-toggle
+          >
+            <span class="site-header__menu-line"></span>
+            <span class="site-header__menu-line"></span>
+            <span class="site-header__menu-line"></span>
+          </button>
+
+          <nav class="site-nav" id="primary-navigation" aria-label="Navegação principal" data-menu>
+            <ul class="site-nav__list">
+              <li><a class="site-nav__link" href="#menu">Menu</a></li>
+              <li><a class="site-nav__link" href="#promocoes">Promoções</a></li>
+              <li><a class="site-nav__link" href="#kids-menu">Kids Menu</a></li>
+              <li><a class="site-nav__link" href="#app">App</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero-section" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="hero__badge">Nova promoção</p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__title-highlight">KB NINJA</span>
+            <span class="hero__title-line">CHEGOU!</span>
+          </h1>
+          <p class="hero__description">
+            Nosso novo combo especial com brinde exclusivo das
+            <span class="hero__description-highlight">Tartarugas Ninja</span>!
+          </p>
+          <a class="hero__cta" href="#menu">
+            Quero Meu Combo!
+            <span class="hero__cta-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <figure class="hero__visual">
+          <img
+            class="hero__image"
+            src="public/images/hero-burguer-gif.gif"
+            alt="Hambúrguer KB Ninja em destaque"
+            fetchpriority="high"
+          >
+        </figure>
+
+        <a class="hero__scroll" href="#menu">
+          <span class="hero__scroll-icon" aria-hidden="true"></span>
+          <span>Confira mais</span>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
