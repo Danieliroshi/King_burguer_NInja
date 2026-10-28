@@ -1,0 +1,86 @@
+.the-kings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+  width: 100%;
+  padding: clamp(3rem, 8vw, 7rem) var(--page-padding);
+  color: var(--color-brand-brown);
+  background-color: #F5EBDC;
+  font-family: var(--font-display);
+  text-align: center;
+}
+
+.the-kings__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.the-kings__title,
+.the-kings__subtitle,
+.the-kings__product-title {
+  margin: 0;
+  font-weight: 400;
+}
+
+.the-kings__title {
+  font-size: clamp(3rem, 8vw, 6rem);
+}
+
+.the-kings__subtitle {
+  color: var(--color-brand-yellow);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.the-kings__product-title {
+  font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+}
+
+.the-kings__products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1rem, 3vw, 3rem);
+  width: 100%;
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+.the-kings__product {
+  display: flex;
+  flex: 0 1 14rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.the-kings__product--featured {
+  flex-basis: 17rem;
+}
+
+.the-kings__product--featured .the-kings__product-image {
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 18%);
+}
+
+.the-kings__product-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .the-kings__products {
+    flex-direction: column;
+  }
+
+  .the-kings__product,
+  .the-kings__product--featured {
+    flex: none;
+    width: min(100%, 24rem);
+  }
+}
